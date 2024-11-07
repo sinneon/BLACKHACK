@@ -87,7 +87,7 @@ namespace Blackjack
 
         public void Play()
         {
-            Console.WriteLine("ブラックジャックで勝負します");
+            Console.WriteLine("ブラックジャックで勝負しましょう！");
             DisplayHands(false);
 
             // プレイヤーのターン
@@ -196,7 +196,8 @@ namespace Blackjack
             else
             {
                 Console.WriteLine(dealerHand[0]);
-                Console.WriteLine("Hidden Card");
+
+                Console.WriteLine("隠された手札");
             }
         }
     }
