@@ -87,7 +87,7 @@ namespace Blackjack
 
         public void Play()
         {
-            Console.WriteLine("Welcome to Blackjack!");
+            Console.WriteLine("ブラックジャックで勝負しましょう！");
             DisplayHands(false);
 
             // プレイヤーのターン
@@ -177,14 +177,14 @@ namespace Blackjack
 
         public void DisplayHands(bool showDealerHand)
         {
-            Console.WriteLine("\nPlayer's Hand:");
+            Console.WriteLine("\nあなたの手札:");
             foreach (var card in playerHand)
             {
                 Console.WriteLine(card);
             }
             Console.WriteLine($"Total Value: {CalculateHandValue(playerHand)}\n");
 
-            Console.WriteLine("Dealer's Hand:");
+            Console.WriteLine("ディーラーの手札:");
             if (showDealerHand)
             {
                 foreach (var card in dealerHand)
@@ -196,7 +196,7 @@ namespace Blackjack
             else
             {
                 Console.WriteLine(dealerHand[0]);
-                Console.WriteLine("Hidden Card");
+                Console.WriteLine("隠された手札");
             }
         }
     }
